@@ -3,7 +3,7 @@
 PostgreSQL's frontend/backend protocol 3.0 for Xmip, one copy, both halves:
 what a client and a server send, read and written; a client that logs in,
 queries and executes in the simple query flow; and the far end the tests and
-the Essentials serve. What a row means to Xmip stays with the transport and
+the System Tests serve. What a row means to Xmip stays with the transport and
 the archive target.
 
 | Item | What it is |
@@ -20,7 +20,7 @@ connection, a rollback, a resource or an operator (`sql_error`); a wrong
 password, a missing table, a syntax error are not.
 
 Who uses it: `xmip-core-transport-postgresql` and
-`xmip-core-archive-postgresql`, and the Essentials' archive cabinet serves its
+`xmip-core-archive-postgresql`, and the System Tests' archive cabinet serves its
 far end. Until 2026-11-13 all of it sat in the PostgreSQL transport, and the
 archive target reached it through that.
 

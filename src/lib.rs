@@ -10,7 +10,7 @@
 //! tag that completes a statement, an error (`backend.rs`). [`Client`] is
 //! the near end: it logs in by trust or a cleartext password, queries and
 //! executes, and closes; [`Session`] is the far end a test or the
-//! Essentials serves, not a database. MD5 and SCRAM are not implemented,
+//! System Tests serve, not a database. MD5 and SCRAM are not implemented,
 //! and a server that asks for either is told so.
 //!
 //! **A refusal is [`net::NetError`]**, as every library's is: a
